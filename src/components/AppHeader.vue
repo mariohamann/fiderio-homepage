@@ -7,7 +7,7 @@
 	<!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+    <div class="relative z-10 pb-12 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
       <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <polygon points="50,0 100,0 50,100 0,100" />
       </svg>
@@ -21,23 +21,28 @@
             Say hello to <i>Fiderio</i>, your next-gen publishing framework.
           </p>
           <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-            <form action="#" method="POST" class="mt-3 sm:flex">
+            <form action="#" method="POST" class="mt-3 flex">
               <label for="email" class="sr-only">Email</label>
               <input type="email" name="email" id="email" class="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="Enter your email">
-              <button type="submit" class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
+              <button type="submit" class="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-0 ml-3 flex-shrink-0 inline-flex items-center w-auto">
                 Notify me
               </button>
             </form>
             <p class="mt-3 text-sm text-gray-500">
-              We will ping you once, as soon as <i>Fiderio</i> is available. No spam, no newsletter.
+              We will ping you once, when <i>Fiderio</i> is available.<br>No spam, no newsletter.
             </p>
           </div>
         </div>
       </main>
     </div>
   </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="@/assets/hero-image.jpg" alt="">
+
+  <div class="relative lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+
+<svg class="block lg:hidden top-0 absolute right-0 inset-y-0 h-10 md:h-12 w-screen text-white" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+<polygon points="0,0 100,0 0,100 0,100" />
+</svg>
+    <img class="h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero-image.jpg" alt="">
   </div>
 </div>
 </template>
