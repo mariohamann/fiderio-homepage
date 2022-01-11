@@ -6,16 +6,21 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     AutoSuggestion: typeof import('./src/components/code/auto-suggestion.md')['default']
-    Button: typeof import('./src/components/Button.vue')['default']
-    ChapterHeader: typeof import('./src/components/ChapterHeader.vue')['default']
+    Button: typeof import('./src/components/common/Button.vue')['default']
+    ChapterFlexibility: typeof import('./src/components/chapters/ChapterFlexibility.vue')['default']
+    ChapterHeader: typeof import('./src/components/common/ChapterHeader.vue')['default']
+    ChapterHybridity: typeof import('./src/components/chapters/ChapterHybridity.vue')['default']
+    ChapterScripting: typeof import('./src/components/chapters/ChapterScripting.vue')['default']
     DynamicData: typeof import('./src/components/DynamicData.vue')['default']
-    Editor: typeof import('./src/components/Editor.vue')['default']
+    Editor: typeof import('./src/components/common/Editor.vue')['default']
     ExampleDynamicData: typeof import('./src/components/examples/ExampleDynamicData.vue')['default']
-    HeroTabs: typeof import('./src/components/HeroTabs.vue')['default']
+    ExampleScripting: typeof import('./src/components/examples/ExampleScripting.vue')['default']
+    HeroTabs: typeof import('./src/components/common/HeroTabs.vue')['default']
     'Icon:bx:bxMoon': typeof import('~icons/bx/bx-moon')['default']
     'Icon:bx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
     'IconAkarIcons:githubFill': typeof import('~icons/akar-icons/github-fill')['default']
-    Link: typeof import('./src/components/Link.vue')['default']
+    Link: typeof import('./src/components/common/Link.vue')['default']
+    Step: typeof import('./src/components/Step.vue')['default']
   }
 }
 
