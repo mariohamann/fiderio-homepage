@@ -14,40 +14,8 @@
 <template>
 	<div class="text-lg">
 		<section>
-			<div class="mx-auto lg:pt-12 lg:pb-12 items-center max-w-screen-xl">
-				<div
-					class="flex flex-col items-center justify-center space-y-4 md:pt-28 pb-28 md:flex-row md:space-y-0 md:space-x-12 justify-items-center"
-				>
-					<div
-						class="flex flex-col w-full pb-10 text-center md:w-2/5 md:text-left"
-					>
-						<div>
-							<h1 class="text-4xl lg:text-5xl font-serif">
-								Publish for people, not paper.
-							</h1>
-							<br />
-							<h3 class="text-lg lg:text-xl">
-								Say hello to <i>Fiderio</i>, your next-gen publishing framework.
-							</h3>
-							<br />
-						</div>
-						<div class="md:place-self-start place-self-center">
-							<button class="btn btn-purple p-4 px-6">
-								<img
-									src="/images/external/logos/apple-black.png"
-									width="15px"
-									height="15px"
-								/><span>Download for free</span>
-							</button>
-						</div>
-					</div>
-					<div class="w-full md:w-3/5">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="max-w-screen-lg mx-auto lg:pt-12 lg:pb-12 items-center">
+			<div class="max-w-screen-lg mx-auto lg:pb-12 items-center">
+
 			<ChapterHeader>
 				<template #subtitle>Hybridity</template>
 				<template #header>Spread the word – on paper, screen and assistive technologies</template>
@@ -55,9 +23,17 @@
 					Your content deserves more than being optimized for printers. Fiderio provides the toolset to widen and please your audience on every medium – without needing you to be a computer scientist.
 				</template>
 			</ChapterHeader>
-
-						<HeroTabs class="place-self-center" />
-			<ChapterHeader>
+			<Editor>
+				<template #output>
+					<div class="text-center">
+						<div class="bg-black aspect-w-16 aspect-h-9 w-full"></div>
+						<p>
+							<b>Fig 1</b>: A video about something cool.
+						</p>
+					</div>
+				</template>
+			</Editor>
+				<ChapterHeader>
 				<template #subtitle>Inline Scripting</template>
 				<template #header> Be as fast as your data. </template>
 				<template #content>
@@ -71,18 +47,75 @@
 				</template>
 			</ChapterHeader>
 			<ExampleDynamicData />
-				<ChapterHeader>
-					<template #header>
-						Spread the word – on paper, screen and assistive
-						technologies
-					</template>
-					<template #content>
-						Your content deserves more than being optimized for
-						printers. Fiderio provides the toolset to widen and
-						please your audience on every medium – without needing
-						you to be a computer scientist.
-					</template>
-				</ChapterHeader>
+			<ChapterHeader>
+				<template #subtitle>Markdown + HTML/CSS</template>
+				<template #header>Beautiful per default, flexible on demand</template>
+				<template #content>
+					Fiderio uses Markdown to provide a calm and focused writing environment without losing the typographic power of TeX. Being build on HTML and TailwindCSS, you'll be able to individualize your content or theme in seconds.
+				</template>
+			</ChapterHeader>
+			<Editor>
+				<template #input>
+					# Hello
+				</template>
+				<template #output>
+					<p>This is some <u class="decoration-primary-600 underline-offset-2 decoration-1">content</u>.</p>
+					<div class="bg-gray-100 rounded-md p-2 marker:text-amber-600">
+					<ul>
+						<li>List item 1</li>
+						<li>List item 1</li>
+						<li>List item 1</li>
+					</ul>
+					</div>
+					<div class="hidden border border-gray-700 rounded-md p-2 my-3 marker:text-gray-700">
+					<ul>
+						<li>List item 1</li>
+						<li>List item 1</li>
+						<li>List item 1</li>
+					</ul>
+					</div>
+				</template>
+			</Editor>
+			<!-- This example requires Tailwind CSS v2.0+ -->
+			<nav class="flex items-center justify-center mt-6 flex flex-col" aria-label="Progress">
+
+			<ol role="list" class="flex items-center space-x-5">
+				<li>
+				<!-- Completed Step -->
+				<a href="#" class="block w-2.5 h-2.5 bg-primary-600 rounded-full hover:bg-primary-900">
+					<span class="sr-only">Step 1</span>
+				</a>
+				</li>
+
+				<li>
+				<!-- Current Step -->
+				<a href="#" class="relative flex items-center justify-center" aria-current="step">
+					<span class="absolute w-5 h-5 p-px flex" aria-hidden="true">
+					<span class="w-full h-full rounded-full bg-primary-200"></span>
+					</span>
+					<span class="relative block w-2.5 h-2.5 bg-primary-600 rounded-full" aria-hidden="true"></span>
+					<span class="sr-only">Step 2</span>
+				</a>
+				</li>
+
+				<li>
+				<!-- Upcoming Step -->
+				<a href="#" class="block w-2.5 h-2.5 bg-gray-200 rounded-full hover:bg-gray-400">
+					<span class="sr-only">Step 3</span>
+				</a>
+				</li>
+
+				<li>
+				<!-- Upcoming Step -->
+				<a href="#" class="block w-2.5 h-2.5 bg-gray-200 rounded-full hover:bg-gray-400">
+					<span class="sr-only">Step 4</span>
+				</a>
+				</li>
+			</ol>
+
+			<p class="text-sm font-medium mt-4">Step 2 of 4</p>
+			</nav>
+
 				<div
 					class="grid grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-y-2 md:gap-y-8 gap-x-8"
 				>
