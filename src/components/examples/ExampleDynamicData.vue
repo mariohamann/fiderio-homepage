@@ -1,7 +1,10 @@
 <template>
-	<Editor :lines="(data.length * 4) + 16">
+	<Editor :lines="data.length * 4 + 16">
 		<template #input>
-			<pre v-pre tabindex="0"><code class="language-markdown"><span class="token title important"><span class="token punctuation">###</span> Dynamic sample description</span>
+			<pre
+				v-pre
+				tabindex="0"
+			><code class="language-markdown"><span class="token title important"><span class="token punctuation">###</span> Dynamic sample description</span>
 
 The last update of the sample was at <span class="token code-snippet code keyword">{{ <code class="language-javascript">time</code> }}</span>.
 
@@ -22,27 +25,36 @@ The last update of the sample was at <span class="token code-snippet code keywor
 			<h3>Sample description</h3>
 			The last update of the sample was at {{ time }}.
 			<ul>
+				<li>The sample size is N = {{ data.length }}.</li>
 				<li>
-					The sample size is N = {{ data.length }}.</li>
-				<li>
-					Participants were on average {{ Math.round(data.reduce((summedAge, date) => summedAge + date.age, 0) / data.length) }} years old, with a maximum of  {{ Math.max(...data.map(x => x.age)) }}, and a minimum of {{ Math.min(...data.map(x => x.age)) }}.
+					Participants were on average
+					{{
+						Math.round(
+							data.reduce(
+								(summedAge, date) => summedAge + date.age,
+								0
+							) / data.length
+						)
+					}}
+					years old, with a maximum of
+					{{ Math.max(...data.map(x => x.age)) }}, and a minimum of
+					{{ Math.min(...data.map(x => x.age)) }}.
 				</li>
-				<li>{{ data.filter(x => x.happy == true ).length }} of them were happy ({{ Math.round(data.filter(x => x.happy == true ).length / data.length * 100) }}%).</li>
+				<li>
+					{{ data.filter(x => x.happy == true).length }} of them were
+					happy ({{
+						Math.round(
+							(data.filter(x => x.happy == true).length /
+								data.length) *
+								100
+						)
+					}}%).
+				</li>
 			</ul>
 		</template>
 	</Editor>
 	<div class="w-full mt-8 text-center left-0">
-		<button
-			@click="addNewData"
-			type="button"
-			class="transition-all inline-flex items-center px-6 py-3 border border-transparent shadow-lg text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
-		>
-			<!-- Heroicon name: solid/mail -->
-<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-</svg>
-			<span class="ml-2">Add new data</span>
-		</button>
+		<Button @click="addNewData"/>
 	</div>
 </template>
 
@@ -64,10 +76,13 @@ The last update of the sample was at <span class="token code-snippet code keywor
 	const addNewData = () => {
 		time.value = getTime();
 
-		for (let index = 0; index < getRandomInt(2,5); index++) {
-			data.value.unshift({age: getRandomInt(8,93), happy: getRandomInt(0,10) > 4});
+		for (let index = 0; index < getRandomInt(2, 5); index++) {
+			data.value.unshift({
+				age: getRandomInt(8, 93),
+				happy: getRandomInt(0, 10) > 4,
+			});
 		}
-	}
+	};
 
 	addNewData();
 </script>

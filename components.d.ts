@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     AutoSuggestion: typeof import('./src/components/code/auto-suggestion.md')['default']
+    Button: typeof import('./src/components/Button.vue')['default']
     ChapterHeader: typeof import('./src/components/ChapterHeader.vue')['default']
     DynamicData: typeof import('./src/components/DynamicData.vue')['default']
     Editor: typeof import('./src/components/Editor.vue')['default']
