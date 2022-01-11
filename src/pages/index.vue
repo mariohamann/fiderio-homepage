@@ -16,11 +16,12 @@
 		<Hero />
 	</header>
 
-	<main class="p-8 bg-gray-100 text-gray-900 leading-loose">
+	<main class="py-8 bg-gray-100 text-gray-900 leading-loose">
 		<div class="text-lg">
 			<section>
 				<SectionHybridity />
 				<SectionFlexibility />
+				<SectionShorts/>
 				<div class="max-w-screen-lg mx-auto lg:pb-12 items-center">
 					<div
 						class="grid grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-y-2 md:gap-y-8 gap-x-8"

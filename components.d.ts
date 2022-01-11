@@ -24,6 +24,7 @@ declare module 'vue' {
     SectionFlexibility: typeof import('./src/components/sections/SectionFlexibility.vue')['default']
     SectionHybridity: typeof import('./src/components/sections/SectionHybridity.vue')['default']
     SectionScripting: typeof import('./src/components/sections/SectionScripting.vue')['default']
+    SectionShorts: typeof import('./src/components/sections/SectionShorts.vue')['default']
     Step: typeof import('./src/components/Step.vue')['default']
   }
 }
