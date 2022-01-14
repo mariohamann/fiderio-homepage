@@ -1,5 +1,5 @@
 <template>
-	<Editor :lines="data.length * 4 + 16">
+	<Editor :lines="12">
 		<template #input>
 			<pre v-bind:class="{ loading: loading }" tabindex="0"><code
 				v-pre class="language-markdown"><span class="token title important"><span class="token punctuation">###</span> Dynamic sample description</span>
@@ -12,11 +12,8 @@ The last update of the sample was at <span class="highlight token code-snippet c
 			<pre class="opacity-30">
 
 
-
-// imported data
-
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token keyword">const</span> data <span class="token operator">=</span> {{ JSON.stringify(data, null, 4) }}
+	<span class="token keyword">const</span> data <span class="token operator">=</span> <span :class="loading && 'opacity-50'" class="transition duration-700">{{ JSON.stringify(data) }}</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></pre>
 		</template>
 		<template #output>
