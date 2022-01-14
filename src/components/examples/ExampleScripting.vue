@@ -6,41 +6,41 @@
 
 The last update of the sample was at <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">time</code> }}</span>.
 
-<span class="token list punctuation">-</span> The sample size is N = <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">data<span class="token punctuation">.</span>length</code> }}</span>.
-<span class="token list punctuation">-</span> Participants were on average <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">math<span class="token punctuation">.</span><span class="token function">mean</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">)</span></code> }}</span> years old, with a maximum of <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>data<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">)</span></code> }}</span>, and a minimum of <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">...</span>data<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">)</span></code> }}</span>.
-<span class="token list punctuation">-</span> <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">data<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>happy <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>length</code> }}</span> of them were happy (<span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>happy <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token operator">/</span> data<span class="token punctuation">.</span>length <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span></code> }}</span>%).</code></pre>
+<span class="token list punctuation">-</span> The sample size is N = <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">sample<span class="token punctuation">.</span>length</code> }}</span>.
+<span class="token list punctuation">-</span> Participants were on average <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">math<span class="token punctuation">.</span><span class="token function">mean</span><span class="token punctuation">(</span>sample<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">)</span></code> }}</span> years old, with a maximum of <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>sample<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">)</span></code> }}</span>, and a minimum of <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">...</span>sample<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">)</span></code> }}</span>.
+<span class="token list punctuation">-</span> <span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">sample<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>happy <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>length</code> }}</span> of them were happy (<span class="highlight token code-snippet code keyword">{{ <code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>sample<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=&gt;</span> x<span class="token punctuation">.</span>happy <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token operator">/</span> sample<span class="token punctuation">.</span>length <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span></code> }}</span>%).</code></pre>
 			<pre class="opacity-30">
 
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
-	<span class="token keyword">const</span> data <span class="token operator">=</span> <span :class="loading && 'opacity-50'" class="transition duration-700">{{ JSON.stringify(data) }}</span>
+	<span class="token keyword">const</span> sample <span class="token operator">=</span> <span :class="loading && 'opacity-50'" class="transition duration-700">{{ JSON.stringify(sample) }}</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></pre>
 		</template>
 		<template #output>
 			<h3>Sample description</h3>
 			<p  :class="{loading: loading}" class="mb-2">The last update of the sample was at <span class="dynamic">{{ time }}</span>.</p>
 			<ul :class="{loading: loading}" >
-				<li>The sample size is N = <span class="dynamic">{{ data.length }}</span>.</li>
+				<li>The sample size is N = <span class="dynamic">{{ sample.length }}</span>.</li>
 				<li>
 					Participants were on average
 					<span class="dynamic">{{
 						Math.round(
-							data.reduce(
+							sample.reduce(
 								(summedAge, date) => summedAge + date.age,
 								0
-							) / data.length
+							) / sample.length
 						)
 					}}</span>
 					years old, with a maximum of
-					<span class="dynamic">{{ Math.max(...data.map(x => x.age)) }}</span>, and a minimum of
-					<span class="dynamic">{{ Math.min(...data.map(x => x.age)) }}</span>.
+					<span class="dynamic">{{ Math.max(...sample.map(x => x.age)) }}</span>, and a minimum of
+					<span class="dynamic">{{ Math.min(...sample.map(x => x.age)) }}</span>.
 				</li>
 				<li>
-					<span class="dynamic">{{ data.filter(x => x.happy == true).length }}</span> of them were
+					<span class="dynamic">{{ sample.filter(x => x.happy == true).length }}</span> of them were
 					happy (<span class="dynamic">{{
 						Math.round(
-							(data.filter(x => x.happy == true).length /
-								data.length) *
+							(sample.filter(x => x.happy == true).length /
+								sample.length) *
 								100
 						)
 					}}</span>%).
@@ -62,7 +62,7 @@ The last update of the sample was at <span class="highlight token code-snippet c
 					clip-rule="evenodd"
 				/>
 			</svg>
-			<span>Add new data</span>
+			<span>Add new sample</span>
 		</Button>
 	</div>
 </template>
@@ -80,7 +80,7 @@ The last update of the sample was at <span class="highlight token code-snippet c
 	// variable
 	let lastTime = ref(getTime());
 	let time = ref(getTime());
-	let data = ref([{ age: 30, happy: true }]);
+	let sample = ref([{ age: 30, happy: true }]);
 	let loading = ref(false);
 
 	const addNewData = () => {
@@ -88,7 +88,7 @@ The last update of the sample was at <span class="highlight token code-snippet c
 		setTimeout(function () {
 			time.value = getTime();
 			for (let index = 0; index < getRandomInt(5, 10); index++) {
-				data.value.unshift({
+				sample.value.unshift({
 					age: getRandomInt(8, 93),
 					happy: getRandomInt(0, 10) > 4,
 				});
