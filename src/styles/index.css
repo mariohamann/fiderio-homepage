@@ -3,7 +3,7 @@
 @import 'prism-theme-vars/base.css';
 :root {
 	--prism-foreground: #d4d4d4;
-	--prism-background: #1e293b;
+	--prism-background: transparent;
 
 	--prism-namespace: #aaaaaa;
 	--prism-comment: #758575;
@@ -23,6 +23,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+code .language-markdown{
+	@apply font-mono;
+}
+
+.highlight{
+	@apply px-1 py-0.5 rounded-md transition duration-700;
+	margin: 0 -.1875rem;
+	background-color: rgb(125 211 252/.1);
+}
+
+.loading .highlight{
+	background-color: rgb(125 211 252/.05);
+}
+
+
+.dynamic{
+	@apply -mx-0.5 px-0.5 rounded-md transition duration-700 bg-white;
+}
+
+.loading .dynamic{
+	@apply bg-primary-200;
+}
 
 /* .prose pre, pre {
 	@apply leading-loose p-4;

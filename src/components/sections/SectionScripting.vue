@@ -1,7 +1,7 @@
 <template>
 	<ChapterHeader>
 		<template #subtitle>Inline Scripting</template>
-		<template #header> Be as fast as your data. </template>
+		<template #header> Be faster than your data. </template>
 		<template #content>
 			Do you create reports on a regular basis or does your data sometimes
 			change during your writing process? Dynamise your content with the
