@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="relative overflow-hidden shadow-xl flex max-w-screen-xl mx-auto bg-gray-900 h-[31.625rem] max-h-[60vh] sm:max-h-[none] sm:rounded-xl lg:h-[34.6875rem] xl:h-[31.625rem] dark:bg-gray-900/70 dark:backdrop-blur dark:ring-1 dark:ring-inset dark:ring-white/10"
+		class="relative overflow-hidden shadow-xl flex max-w-screen-xl mx-auto bg-gray-900 h-[31.625rem] max-h-[60vh] sm:max-h-[none] sm:rounded-xl lg:h-[34.6875rem] xl:h-[31.625rem]"
 	>
 		<div class="relative w-full flex flex-col">
 			<div class="flex-none border-b border-gray-500/30">

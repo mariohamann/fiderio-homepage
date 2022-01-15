@@ -16,17 +16,17 @@
 	</header>
 
 	<main class="py-8 bg-gray-100 text-gray-900 leading-loose">
-		<div class="text-lg">
-			<section class="mt-24">
+		<div class="text-lg mt-24 space-y-24">
+			<section>
 				<SectionHybridity  />
 			</section>
-			<section class="mt-24">
+			<section>
 				<SectionFlexibility />
 			</section>
-			<section class="mt-16">
+			<section>
 				<SectionShorts />
 			</section>
-			<section class="mt-24">
+			<section>
 				<SectionScripting />
 			</section>
 
