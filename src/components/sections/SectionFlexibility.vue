@@ -3,10 +3,8 @@
 		<template #subtitle>Markdown + HTML/CSS</template>
 		<template #header>Beautiful per default, flexible on demand</template>
 		<template #content>
-			Fiderio uses Markdown to provide a calm and focused writing
-			environment without losing the typographic power of TeX. Being build
-			on HTML and TailwindCSS, you'll be able to individualize your
-			content or theme in seconds.
+			Fiderio combines the simplicity of Markdown with the typographic power of TeX.
+			Use HTML and TailwindCSS to individualize your content or theme in seconds.
 		</template>
 	</ChapterHeader>
 	<Editor>

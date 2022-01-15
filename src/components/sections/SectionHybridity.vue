@@ -2,13 +2,10 @@
 	<ChapterHeader>
 		<template #subtitle>Hybridity</template>
 		<template #header
-			>Spread the word – on paper, screen and assistive
-			technologies</template
+			>Publish for people – not paper.</template
 		>
 		<template #content>
-			Your content deserves more than being optimized for printers.
-			Fiderio provides the toolset to widen and please your audience on
-			every medium – without needing you to be a computer scientist.
+			Write once and publish everywhere and for everyone. No hassle with cross-compilation, formats for different media and versions for various output formats.
 		</template>
 	</ChapterHeader>
 	<Editor>

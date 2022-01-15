@@ -2,7 +2,6 @@
 	import { useStore } from '@/store';
 	import VitailseLogo from '@/assets/logo.png';
 	import 'prism-theme-vars/base.css';
-	import Hero from '@/components/sections/Hero.vue';
 	useHead({
 		title: 'Fiderio | Create and publish the 21th century way',
 	});

@@ -15,9 +15,7 @@
 					</template>
 					<template #title> Familiar code </template>
 					<template #content>
-						From <InlineCode>\cite</InlineCode> to <InlineCode>&lt;Cite&gt;</InlineCode>,
-						from <InlineCode>\caption</InlineCode> to
-						<InlineCode>&lt;Caption&gt;</InlineCode> – it's easy!
+						From <InlineCode>\cite</InlineCode> to <InlineCode>&lt;Cite&gt;</InlineCode> – your switch will be smooth!
 					</template>
 				</Card>
 				<Card>
@@ -36,8 +34,8 @@
 					</template>
 					<template #title> Fast preview </template>
 					<template #content
-						>Save your edits and you'll see them rerendered
-						immediately.</template
+						>Save your edits and they're
+						immediately compiled.</template
 					>
 				</Card>
 			</dl>
@@ -47,10 +45,9 @@
 					<template #icon>
 						<IconExport />
 					</template>
-					<template #title> Equitations </template>
+					<template #title> Equations </template>
 					<template #content>
-						With LaTeX syntax you'll get beautiful and accessible
-						equitations.
+						Use LaTeX syntax to create theorems and formulae.
 					</template>
 				</Card>
 				<Card>
@@ -58,14 +55,14 @@
 						<IconPlugins />
 					</template>
 					<template #title> Plugins </template>
-					<template #content> Lorem Ipsum dolor sit Mermaid – dilidur salem.</template>
+					<template #content> Boost your writing with first-party and community plugins. </template>
 				</Card>
 				<Card>
 					<template #icon>
 						<IconTheme />
 					</template>
 					<template #title> Themes </template>
-					<template #content> Lorem Ipsum dolor sit APA  – dilidur salem.</template>
+					<template #content> Change and personalize your document's design in seconds. </template>
 				</Card>
 			</dl>
 			<h3 class="mt-10 mb-4 text-2xl text-white">3. Save and export</h3>
