@@ -17,12 +17,19 @@
 
 	<main class="py-8 bg-gray-100 text-gray-900 leading-loose">
 		<div class="text-lg">
-			<section>
-				<SectionHybridity />
+			<section class="mt-24">
+				<SectionHybridity  />
+			</section>
+			<section class="mt-24">
 				<SectionFlexibility />
-				<SectionShorts/>
+			</section>
+			<section class="mt-16">
+				<SectionShorts />
+			</section>
+			<section class="mt-24">
 				<SectionScripting />
 			</section>
+
 		</div>
 	</main>
 </template>
