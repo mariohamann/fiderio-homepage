@@ -1,10 +1,9 @@
 <template>
 	<ChapterHeader>
-		<template #subtitle>Markdown + HTML/CSS</template>
+		<template #subtitle>Markdown · HTML/CSS</template>
 		<template #header>Beautiful per default, flexible on demand</template>
 		<template #content>
-			Fiderio combines the simplicity of Markdown with the typographic power of TeX.
-			Use HTML and TailwindCSS to individualize your content or theme in seconds.
+			<Fiderio/> combines the simplicity of Markdown with the typographic power of TeX and the flexibility of HTML/TailwindCSS.
 		</template>
 	</ChapterHeader>
 	<Editor>

@@ -24,7 +24,7 @@
 @tailwind components;
 @tailwind utilities;
 
-code .language-markdown{
+code .language-markdown, code .language-javascript{
 	@apply font-mono;
 }
 

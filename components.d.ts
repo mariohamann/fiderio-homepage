@@ -17,6 +17,7 @@ declare module 'vue' {
     Editor: typeof import('./src/components/common/Editor.vue')['default']
     ExampleDynamicData: typeof import('./src/components/examples/ExampleDynamicData.vue')['default']
     ExampleScripting: typeof import('./src/components/examples/ExampleScripting.vue')['default']
+    Fiderio: typeof import('./src/components/common/Fiderio.vue')['default']
     Hero: typeof import('./src/components/sections/Hero.vue')['default']
     HeroTabs: typeof import('./src/components/common/HeroTabs.vue')['default']
     'Icon:bx:bxMoon': typeof import('~icons/bx/bx-moon')['default']

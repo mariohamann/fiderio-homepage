@@ -18,7 +18,7 @@
             <span class="block font-serif xl:inline leading-tight"> With the future in mind. </span>
           </h1>
           <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-			Fiderio is your next-gen framework for creating well-structured, print- and web-ready documents using Markdown-based syntax.
+			<Fiderio/> is your next-gen framework for creating well-structured, print- and web-ready documents using Markdown-based syntax.
           </p>
           <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
             <form action="#" method="POST" class="mt-3 flex">
@@ -29,7 +29,7 @@
               </button>
             </form>
             <p class="mt-3 text-sm text-gray-400 italic">
-              We will ping you once, when <i>Fiderio</i> is available.<br>No spam, no newsletter.
+              We will ping you once, when <Fiderio/> is available.<br>No spam, no newsletter.
             </p>
           </div>
         </div>

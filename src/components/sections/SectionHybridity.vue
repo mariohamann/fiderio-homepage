@@ -1,11 +1,11 @@
 <template>
 	<ChapterHeader>
-		<template #subtitle>Hybridity</template>
+		<template #subtitle>Accessibile · hybrid</template>
 		<template #header
 			>Publish for people – not paper.</template
 		>
 		<template #content>
-			Write once and publish everywhere and for everyone. No hassle with cross-compilation, formats for different media and versions for various output formats.
+			Write once and publish everywhere. No hassle with cross-compilation, formats for different media and versions for various output formats.
 		</template>
 	</ChapterHeader>
 	<Editor>
