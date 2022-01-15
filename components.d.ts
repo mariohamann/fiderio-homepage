@@ -30,6 +30,7 @@ declare module 'vue' {
     IconGit: typeof import('./src/components/icons/IconGit.vue')['default']
     IconLocal: typeof import('./src/components/icons/IconLocal.vue')['default']
     IconPlugins: typeof import('./src/components/icons/IconPlugins.vue')['default']
+    IconPlus: typeof import('./src/components/icons/IconPlus.vue')['default']
     IconPreview: typeof import('./src/components/icons/IconPreview.vue')['default']
     IconTheme: typeof import('./src/components/icons/IconTheme.vue')['default']
     InlineCode: typeof import('./src/components/common/InlineCode.vue')['default']

@@ -7,16 +7,47 @@
 			</template>
 		</ChapterHeader>
 		<Editor>
-			<template #input> # Hello </template>
+			<template #input>
+				<pre v-pre>
+Incididunt non in amet <span class="token punctuation">&lt;</span>u class="decoration-orange">quis pariatur<span class="token punctuation">&lt;</span>/u> est magna commodo est est labore consectetur. Fugiat magna velit ut incididunt eu pariatur nulla veniam.
+
+- Occaecat Lorem qui et id officia aliquip.
+- Dolor consequat minim occaecat exercitation quis labore.
+- Pariatur pariatur consectetur tempor duis ullamco mollit.
+
+...
+	theme: {
+		extends: {
+			fontFamily: {
+				primary: 'Tinos',
+				secondary: 'Fira Sans',
+				mono: 'Fira Code',
+			},
+			colors: {
+				primary: colors.grey,
+				secondary: color.amber,
+			},
+		},
+	},
+...
+
+				</pre>
+			</template>
 			<template #output>
+				<div class="font-sans text-[0.95em]">
 				<p>
 					This is some
 					<u
-						class="decoration-primary-600 underline-offset-2 decoration-1"
+						class="decoration-primary-500 decoration-2"
 						>content</u
 					>.
 				</p>
-				<div class="bg-gray-100 rounded-md p-2 marker:text-amber-600">
+				<div :class="[
+					background ? 'bg-gray-100 ' : 'bg-white',
+					rounded ? 'rounded-lg' : 'rounded-none',
+					padding ? 'p-2' : 'p-0',
+					marker ? 'marker:text-amber-600' : 'marker:text-gray-900'
+				]" class="transition-all duration-700 p-2 ">
 					<ul>
 						<li>List item 1</li>
 						<li>List item 1</li>
@@ -32,25 +63,15 @@
 						<li>List item 1</li>
 					</ul>
 				</div>
+				</div>
 			</template>
 		</Editor>
 		<nav
 			class="flex items-center justify-center mt-8 flex flex-col"
 			aria-label="Progress"
 		>
-			<Button>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-5 w-5 animate-pulse"
-					viewBox="0 0 20 20"
-					fill="currentColor"
-				>
-					<path
-						fill-rule="evenodd"
-						d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-						clip-rule="evenodd"
-					/>
-				</svg>
+			<Button @click="setBox">
+				<IconPlus/>
 				<span>Style content</span>
 			</Button>
 
@@ -110,3 +131,28 @@
 		</nav>
 </template>
 
+
+
+<script lang="ts" setup>
+	import { ref } from 'vue';
+	let background = ref(false);
+	let padding = ref(false);
+	let rounded = ref(false);
+	let marker = ref(false);
+
+	const setBox = () => {
+		setTimeout(function () {
+			background.value = true;
+		}, 500);
+		setTimeout(function () {
+			padding.value = true;
+		}, 1200);
+		setTimeout(function () {
+			rounded.value = true;
+		}, 1900);
+		setTimeout(function () {
+			marker.value = true;
+		}, 2600);
+	}
+
+</script>

@@ -15,7 +15,7 @@
 					<div class="w-full flex-auto flex min-h-0 overflow-auto">
 						<div class="w-full relative flex-auto">
 							<pre
-								class="flex min-h-full text-base font-mono leading-7"
+								class="flex min-h-full text-sm font-mono leading-7"
 							><div v-if="lines > 0" aria-hidden="true" class="hidden md:block text-gray-600 flex-none py-4 pr-4 text-right select-none w-14">1<span v-for="n in (lines - 1)" :key=n><br/>{{ n+1 }}</span>
 							</div>
 								<code class="flex-auto relative block text-gray-50 overflow-auto p-4"><slot name="input"/></code>
