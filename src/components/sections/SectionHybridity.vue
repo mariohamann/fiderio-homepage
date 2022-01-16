@@ -9,10 +9,25 @@
 		</template>
 	</ChapterHeader>
 	<Editor>
+		<template #input>
+			<pre>(figure)
+	(screen)
+		(video src="newtons-cradle.mp4" loop autoplay /)
+	(screen)
+	(print)
+		(img src="newtons-cradle.jpg"/)
+	(/print)
+	(screenreader)
+		Labore sunt officia ipsum sint ea labore enim occaecat. Incididunt id sunt excepteur in tempor velit ut.
+	(/screenreader)
+	(label)
+		Newtons cradle (print)vor dem Stoß vs. nach dem Stoß(/print)
+	(/label)
+(/figure)</pre></template>
 		<template #output>
 			<div class="text-center">
-				<div class="bg-black aspect-w-16 aspect-h-9 w-full"></div>
-				<p><b>Fig 1</b>: A video about something cool.</p>
+				<video src="@/assets/newtons-cradle.mp4" class="bg-black w-full rounded-xl" loop autoplay muted></video>
+				<p><b>Fig 1</b>: Newton's cradle (idealized).</p>
 			</div>
 		</template>
 	</Editor>
