@@ -1,7 +1,7 @@
 <template>
 <div class="px-4">
 	<div
-		class="relative overflow-hidden shadow-xl flex max-w-screen-xl mx-auto bg-gray-900 sm:rounded-xl"
+		class="relative overflow-hidden shadow-xl flex max-w-screen-xl mx-auto bg-gray-900 rounded-xl"
 	>
 		<div class="relative w-full flex flex-col">
 			<div class="flex-none border-b border-gray-500/30">
@@ -16,9 +16,9 @@
 					<div class="w-full flex-auto flex min-h-0 overflow-auto">
 						<div class="w-full relative flex-auto">
 							<pre
-								class="flex min-h-full text-sm font-mono leading-7"
-							><div v-if="lines > 0" aria-hidden="true" class="hidden md:block text-gray-600 flex-none py-6 pr-4 text-right select-none w-14">1<span v-for="n in (lines - 1)" :key=n><br v-if="n < lines"/>{{ n+1 }}</span></div>
-							<code class="flex-auto relative block text-gray-50 overflow-auto py-6 px-4"><slot name="input"/></code></pre>
+								class=" flex items-stretch min-h-full text-sm font-mono leading-7"
+							><div v-if="lines > 0" aria-hidden="true" class="hidden md:block text-gray-600 flex-none py-6 pr-4 text-right select-none w-14">1<span v-for="n in (lines - 1)" :key=n><br v-if="n < lines"/>{{ !split ? n + 1 : (n  === split ? '' : (n < split ? n+1 : n - split)) }}</span></div>
+							<code class="!self-stretch flex-auto relative block text-gray-50 overflow-auto py-6 px-4 !h-full"><slot name="input"/></code></pre>
 						</div>
 					</div>
 				</div>
@@ -40,6 +40,6 @@
 
 	const props = defineProps({
 		lines: Number!,
-		height: Number!
+		split: Number,
 	})
 </script>

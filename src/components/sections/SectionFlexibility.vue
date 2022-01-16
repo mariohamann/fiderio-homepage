@@ -14,14 +14,14 @@
 <span class="token list punctuation">-</span> Dolor consequat minim occaecat exercitation quis labore.
 <span class="token list punctuation">-</span> Pariatur pariatur consectetur tempor duis ullamco mollit.<span v-if="step > 0" id="step2"></span></code></pre></template>
 		<template #output>
-			<div class="font-sans text-[0.95em]">
+			<div class="">
 				<p class="mt-0">
 					Incididunt
 					<u class="decoration-primary-500 decoration-2 underline-offset-4">in amet</u> est magna.
 				</p>
 				<div
 					:class="[
-						step > 3 ? 'bg-gray-200' : 'border-white',
+						step > 3 ? 'bg-gray-100' : 'border-white',
 						step > 4 ? 'p-4' : 'p-0',
 						step > 5 ? 'border-l-8' : 'border-l-0',
 						step > 6
