@@ -23,12 +23,12 @@
 					:class="[
 						step > 3 ? 'bg-gray-200' : 'border-white',
 						step > 4 ? 'p-4' : 'p-0',
-						step > 5 ? 'rounded-3xl' : 'rounded-none',
+						step > 5 ? 'border-l-8' : 'border-l-0',
 						step > 6
-							? 'marker:text-amber-600'
-							: 'marker:text-gray-600',
+							? 'border-l-primary-500'
+							: 'border-l-white',
 					]"
-					class="duration-1000 border"
+					class="duration-1000 marker:text-gray-600"
 				>
 					<ul class="">
 						<li class="mt-1">Occaecat lorem qui et id officia aliquip.</li>
@@ -125,10 +125,10 @@
 				type(50, true, '<span> p-2</span><span id="step5"></span>')
 				break;
 			case 5:
-				type(60, true, '<span> rounded-xl</span><span id="step6"></span>')
+				type(60, true, '<span> border-l-8</span><span id="step6"></span>')
 				break;
 			case 6:
-				type(60, true, '<span> marker:text-orange</span>')
+				type(60, true, '<span> border-l-orange</span>')
 				break;
 			}
 		}, 200);
