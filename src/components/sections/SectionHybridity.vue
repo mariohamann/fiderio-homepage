@@ -39,6 +39,7 @@
                 loop
                 autoplay
                 muted
+                playinline
                 type="video/mp4"
               />
               <p><b>Fig 1</b>: Newton's cradle.</p>
@@ -63,27 +64,28 @@
           </TabPanel>
         </TabPanels>
       </template>
-    </Editor>
-    <TabList class="flex p-1 max-w-md mx-auto space-x-1 bg-primary-600 rounded-xl mt-8">
-      <Tab
-        v-for="tab in tabs"
-        :key="tab.name"
-        v-slot="{ selected }"
-        as="template"
-      >
-        <button
-          :class="[
-            'w-full py-2.5 text-base transition-opacity leading-5  rounded-lg',
-            'focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60',
-            selected
-              ? 'bg-white text-black font-bold tracking-wide shadow'
-              : 'text-white  hover:bg-white/[0.12] hover:text-white',
-          ]"
+    </Editor><div class=" px-4 xl:px-0">
+      <TabList class="flex p-1 max-w-md mx-auto space-x-1 bg-primary-600 rounded-xl mt-8">
+        <Tab
+          v-for="tab in tabs"
+          :key="tab.name"
+          v-slot="{ selected }"
+          as="template"
         >
-          {{ tab.name }}
-        </button>
-      </Tab>
-    </TabList>
+          <button
+            :class="[
+              'w-full py-2.5 text-base transition-opacity leading-5  rounded-lg',
+              'focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60',
+              selected
+                ? 'bg-white text-black font-bold tracking-wide shadow'
+                : 'text-white  hover:bg-white/[0.12] hover:text-white',
+            ]"
+          >
+            {{ tab.name }}
+          </button>
+        </Tab>
+      </TabList>
+    </div>
   </TabGroup>
 </template>
 
