@@ -41,8 +41,8 @@
 					</video> -->
 			</div>
 				</TabPanel>
-				<TabPanel :class="tabPanelClass">Content 2</TabPanel>
-				<TabPanel :class="tabPanelClass">Content 3</TabPanel>
+				<TabPanel>Content 2</TabPanel>
+				<TabPanel>Content 3</TabPanel>
 			</TabPanels>
 		</TabGroup>
 		</div>
@@ -56,10 +56,10 @@
 		TabPanels,
 		TabPanel,
 	} from '@headlessui/vue';
-	const tabPanelClass = [
-		'bg-white h-12 bg-gray-900 rounded-xl p-3',
-		'focus:outline-none focus:ring-2 ring-offset-2 ring-offset-primary-400 ring-white ring-opacity-60',
-	];
+	// const tabPanelClass = [
+	// 	'bg-white h-12 bg-gray-900 rounded-xl p-3',
+	// 	'focus:outline-none focus:ring-2 ring-offset-2 ring-offset-primary-400 ring-white ring-opacity-60',
+	// ];
 	const tabs = [
 		{ name: 'Screen' },
 		{ name: 'Paper' },

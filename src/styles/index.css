@@ -30,7 +30,7 @@ pre[class*='language-'], code[class*='language-']{
 }
 
 code *[class*='language-']{
-	@apply font-mono;
+	@apply font-mono leading-7;
 }
 
 .typed-cursor{
