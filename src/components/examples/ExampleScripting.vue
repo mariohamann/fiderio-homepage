@@ -48,7 +48,7 @@ The last update of the sample was at <span class="highlight token code-snippet c
 			</ul>
 		</template>
 	</Editor>
-	<div class="w-full mt-8 text-center left-0">
+	<div ref="el" class="w-full mt-8 text-center left-0">
 		<Button @click="addNewData">
 			<IconPlus/>
 			<span>Add new sample</span>
@@ -85,6 +85,20 @@ The last update of the sample was at <span class="highlight token code-snippet c
 			loading.value = false;
 		}, 500);
 	};
+
+
+    const isVisible = ref(false);
+	const el = ref(undefined);
+
+    useIntersectionObserver(el, ([{ isIntersecting }]) => {
+      isVisible.value = isIntersecting;
+    });
+
+	watch(isVisible, () => {
+      if (isVisible.value) {
+        addNewData();
+      }
+    });
 
 
 	addNewData();

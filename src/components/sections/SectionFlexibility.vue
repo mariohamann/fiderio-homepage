@@ -63,8 +63,8 @@
 	const step = ref(0);
 	const stepperStep = ref(0);
 	const lines = ref(5);
-    const isVisible = ref(false);
     const done = ref(true);
+    const isVisible = ref(false);
 	const el = ref(undefined);
 
     useIntersectionObserver(el, ([{ isIntersecting }]) => {
