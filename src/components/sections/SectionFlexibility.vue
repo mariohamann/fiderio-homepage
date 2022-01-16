@@ -7,7 +7,7 @@
 			beauty of TeX and the flexibility of HTML/TailwindCSS.
 		</template>
 	</ChapterHeader>
-	<Editor :lines="lines">
+	<Editor :lines="9">
 		<template #input><pre><code class="language-markdown">Incididunt <code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span> <span :class="step < 1 && 'highlight'"><span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>decoration-orange<span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>in amet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">&gt;</span></span> </code> est magna.
 <span v-if="step > 0" id="step1"></span>
 <span class="token list punctuation">-</span> Occaecat Lorem qui et id officia aliquip.

@@ -8,7 +8,7 @@
 		</template>
 	</ChapterHeader>
 	<TabGroup @change="changedTab">
-		<Editor :lines="14">
+		<Editor :lines="16">
 			<template #input><pre class="language-markup" tabindex="0"><code class="language-markup"><span :class="hidden"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Figure</span><span class="token punctuation">&gt;</span></span></span>
 <span :class="current === 0 ? shown : hidden" class="transition-opacity">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Screen</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>newtons-cradle.mp4<span class="token punctuation">"</span></span> <span class="token attr-name">loop</span> <span class="token attr-name">autoplay</span> <span class="token punctuation">/&gt;</span></span>
