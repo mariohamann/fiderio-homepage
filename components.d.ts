@@ -39,7 +39,8 @@ declare module 'vue' {
     SectionHybridity: typeof import('./src/components/sections/SectionHybridity.vue')['default']
     SectionScripting: typeof import('./src/components/sections/SectionScripting.vue')['default']
     SectionShorts: typeof import('./src/components/sections/SectionShorts.vue')['default']
-    Step: typeof import('./src/components/Step.vue')['default']
+    Step: typeof import('./src/components/common/Step.vue')['default']
+    Stepper: typeof import('./src/components/common/Stepper.vue')['default']
   }
 }
 

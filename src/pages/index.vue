@@ -1,14 +1,3 @@
-<script setup lang="ts">
-	import { useStore } from '@/store';
-	import VitailseLogo from '@/assets/logo.png';
-	import 'prism-theme-vars/base.css';
-	useHead({
-		title: 'Fiderio | Create and publish the 21th century way',
-	});
-
-	const store = useStore();
-	const { t } = useI18n();
-</script>
 
 <template>
 	<header>
@@ -33,6 +22,18 @@
 		</div>
 	</main>
 </template>
+
+<script setup lang="ts">
+	import { useStore } from '@/store';
+	import VitailseLogo from '@/assets/logo.png';
+	import 'prism-theme-vars/base.css';
+	useHead({
+		title: 'Fiderio | Create and publish the 21th century way',
+	});
+
+	const store = useStore();
+	const { t } = useI18n();
+</script>
 
 <route lang="yaml">
 name: home

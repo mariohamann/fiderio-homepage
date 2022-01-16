@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="relative overflow-hidden shadow-xl flex max-w-screen-xl mx-auto bg-gray-900 h-[31.625rem] max-h-[60vh] sm:max-h-[none] sm:rounded-xl lg:h-[34.6875rem] xl:h-[31.625rem]"
+		class="relative overflow-hidden shadow-xl flex max-w-screen-xl mx-auto bg-gray-900 h-[31.625rem] max-h-[60vh] sm:max-h-[none] sm:rounded-xl lg:h-[34.6875rem] xl:h-[30rem] lg:max-h-full"
 	>
 		<div class="relative w-full flex flex-col">
 			<div class="flex-none border-b border-gray-500/30">
@@ -12,7 +12,7 @@
 			</div>
 			<div class="relative min-h-0 flex-auto flex flex-row">
 				<div v-if="$slots.input" class="w-1/2 bg-gray-800 flex-auto flex min-h-0">
-					<div class="w-full flex-auto flex min-h-0 overflow-auto">
+					<div class="w-full flex-auto flex min-h-0 overflow-auto my-auto">
 						<div class="w-full relative flex-auto">
 							<pre
 								class="flex min-h-full text-sm font-mono leading-7"
@@ -36,7 +36,10 @@
 </template>
 
 <script lang="ts" setup>
+	import Vue from 'vue'
+
 	const props = defineProps({
-		lines: Number!
+		lines: Number!,
+		height: Number!
 	})
 </script>

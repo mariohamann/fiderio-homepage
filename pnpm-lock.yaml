@@ -22,6 +22,7 @@ specifiers:
   postcss: ^8.3.8
   prism-theme-vars: ^0.2.2
   tailwindcss: ^3.0.7
+  typed.js: ^2.0.12
   typescript: ^4.5.4
   unplugin-auto-import: ^0.5.3
   unplugin-icons: ^0.12.23
@@ -52,6 +53,7 @@ dependencies:
   postcss: 8.3.8
   prism-theme-vars: 0.2.2
   tailwindcss: 3.0.7_d90402d1bb3b165c9c83046beac13a8b
+  typed.js: 2.0.12
   vue: 3.2.26
   vue-i18n: 9.2.0-beta.23_vue@3.2.26
   vue-router: 4.0.12_vue@3.2.26
@@ -1306,8 +1308,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.26
-      '@intlify/shared': 9.2.0-beta.26
+      '@intlify/message-compiler': 9.2.0-beta.28
+      '@intlify/shared': 9.2.0-beta.28
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.2.0-beta.23_vue@3.2.26
@@ -1339,11 +1341,11 @@ packages:
       source-map: 0.6.1
     dev: false
 
-  /@intlify/message-compiler/9.2.0-beta.26:
-    resolution: {integrity: sha512-qtDgHCMqrXNTekKXGzm0Dm6r3+/X7/jFXP+E07hx+PJbPMv7DzK1iU8h5LlAMQ1/jr2UIRBgXvR5wh35OKoGrA==}
+  /@intlify/message-compiler/9.2.0-beta.28:
+    resolution: {integrity: sha512-NBH9fZyitN2cijGt8bmU1W7ZPdhKbgW01L1RxJKFJW0cRaCmknJq63Aif1Q6xcxKt9ZhPbvIKHgPGzg1nWMfeA==}
     engines: {node: '>= 12'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.26
+      '@intlify/shared': 9.2.0-beta.28
       source-map: 0.6.1
     dev: true
 
@@ -1352,8 +1354,8 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
-  /@intlify/shared/9.2.0-beta.26:
-    resolution: {integrity: sha512-MjUlkjNThqkqy8yXUcFKBiW/hIfqAn5cP3Vd0b4wdOHS8rPCEbvSbAnF08uiZDkVv8gTcsLyymX21GaU6oYyyQ==}
+  /@intlify/shared/9.2.0-beta.28:
+    resolution: {integrity: sha512-JBMcoj1D4kSAma7Vb0+d8z6lPLIn7hIdZJPxbU8bgeMMniwKLoIS/jGlEfrZihsB5+otckPeQp203z8skwVS0w==}
     engines: {node: '>= 12'}
     dev: true
 
@@ -1371,7 +1373,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 2.2.0_vue-i18n@9.2.0-beta.23
-      '@intlify/shared': 9.2.0-beta.26
+      '@intlify/shared': 9.2.0-beta.28
       '@rollup/pluginutils': 4.1.2
       debug: 4.3.3
       fast-glob: 3.2.7
@@ -5024,6 +5026,10 @@ packages:
       media-typer: 0.3.0
       mime-types: 2.1.33
     dev: true
+
+  /typed.js/2.0.12:
+    resolution: {integrity: sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==}
+    dev: false
 
   /typescript/4.5.4:
     resolution: {integrity: sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==}

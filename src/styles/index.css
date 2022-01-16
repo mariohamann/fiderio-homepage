@@ -24,8 +24,28 @@
 @tailwind components;
 @tailwind utilities;
 
-code .language-markdown, code .language-javascript{
+pre[class*='language-'], code[class*='language-']{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+code *[class*='language-']{
 	@apply font-mono;
+}
+
+.typed-cursor{
+	color: white;
+	display: inline-block;
+	width: 0px;
+}
+.typed-cursor::before{
+	margin-left: -4px;
+	content: '';
+
+}
+.typed-cursor.typed-cursor--blink{
+	color: white !important;
+	animation: reset !important;
 }
 
 .highlight{

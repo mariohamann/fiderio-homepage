@@ -1,158 +1,136 @@
 <template>
-		<ChapterHeader>
-			<template #subtitle>Markdown · HTML/CSS</template>
-			<template #header>Beautiful per default, flexible on demand</template>
-			<template #content>
-				<Fiderio/> combines the simplicity of Markdown with the typographic beauty of TeX and the flexibility of HTML/TailwindCSS.
-			</template>
-		</ChapterHeader>
-		<Editor>
-			<template #input>
-				<pre v-pre>
-Incididunt non in amet <span class="token punctuation">&lt;</span>u class="decoration-orange">quis pariatur<span class="token punctuation">&lt;</span>/u> est magna commodo est est labore consectetur. Fugiat magna velit ut incididunt eu pariatur nulla veniam.
-
-- Occaecat Lorem qui et id officia aliquip.
-- Dolor consequat minim occaecat exercitation quis labore.
-- Pariatur pariatur consectetur tempor duis ullamco mollit.
-
-...
-	theme: {
-		extends: {
-			fontFamily: {
-				primary: 'Tinos',
-				secondary: 'Fira Sans',
-				mono: 'Fira Code',
-			},
-			colors: {
-				primary: colors.grey,
-				secondary: color.amber,
-			},
-		},
-	},
-...
-
-				</pre>
-			</template>
-			<template #output>
-				<div class="font-sans text-[0.95em]">
-				<p>
-					This is some
-					<u
-						class="decoration-primary-500 decoration-2"
-						>content</u
-					>.
+	<ChapterHeader>
+		<template #subtitle>Markdown · HTML/TailwindCSS</template>
+		<template #header>Beautiful per default, flexible on demand</template>
+		<template #content>
+			<Fiderio /> combines the simplicity of Markdown with the typographic
+			beauty of TeX and the flexibility of HTML/TailwindCSS.
+		</template>
+	</ChapterHeader>
+	<Editor :lines="lines">
+		<template #input><pre><code class="language-markdown">Incididunt <code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span> <span :class="step < 1 && 'highlight'"><span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>decoration-orange<span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>in amet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">&gt;</span></span> </code> est magna.
+<span v-if="step > 0" id="step1"></span>
+<span class="token list punctuation">-</span> Occaecat Lorem qui et id officia aliquip.
+<span class="token list punctuation">-</span> Dolor consequat minim occaecat exercitation quis labore.
+<span class="token list punctuation">-</span> Pariatur pariatur consectetur tempor duis ullamco mollit.<span v-if="step > 0" id="step2"></span></code></pre></template>
+		<template #output>
+			<div class="font-sans text-[0.95em]">
+				<p class="mt-0">
+					Incididunt
+					<u class="decoration-primary-500 decoration-2 underline-offset-4">in amet</u> est magna.
 				</p>
-				<div :class="[
-					background ? 'bg-gray-100 ' : 'bg-white',
-					rounded ? 'rounded-lg' : 'rounded-none',
-					padding ? 'p-2' : 'p-0',
-					marker ? 'marker:text-amber-600' : 'marker:text-gray-900'
-				]" class="transition-all duration-700 p-2 ">
-					<ul>
-						<li>List item 1</li>
-						<li>List item 1</li>
-						<li>List item 1</li>
-					</ul>
-				</div>
 				<div
-					class="hidden border border-gray-700 rounded-md p-2 my-3 marker:text-gray-700"
+					:class="[
+						step > 3 ? 'bg-gray-200' : 'border-white',
+						step > 4 ? 'p-4' : 'p-0',
+						step > 5 ? 'rounded-3xl' : 'rounded-none',
+						step > 6
+							? 'marker:text-amber-600'
+							: 'marker:text-gray-600',
+					]"
+					class="duration-1000 border"
 				>
-					<ul>
-						<li>List item 1</li>
-						<li>List item 1</li>
-						<li>List item 1</li>
+					<ul class="">
+						<li class="mt-1">Occaecat lorem qui et id officia aliquip.</li>
+						<li>Dolor consequat minim occaecat exercitation quis.</li>
+						<li class="mb-0.5">Pariatur pariatur consectetur tempor duis mollit.</li>
 					</ul>
 				</div>
-				</div>
-			</template>
-		</Editor>
-		<nav
-			class="flex items-center justify-center mt-8 flex flex-col"
-			aria-label="Progress"
-		>
-			<Button @click="setBox">
-				<IconPlus/>
-				<span>Style content</span>
-			</Button>
-
-			<ol role="list" class="flex items-center mt-6 space-x-5">
-				<li>
-					<!-- Completed Step -->
-					<a
-						href="#"
-						class="block w-2.5 h-2.5 bg-primary-600 rounded-full hover:bg-primary-900"
-					>
-						<span class="sr-only">Step 1</span>
-					</a>
-				</li>
-
-				<li>
-					<!-- Current Step -->
-					<a
-						href="#"
-						class="relative flex items-center justify-center"
-						aria-current="step"
-					>
-						<span class="absolute w-5 h-5 p-px flex" aria-hidden="true">
-							<span
-								class="w-full h-full rounded-full bg-primary-200"
-							></span>
-						</span>
-						<span
-							class="relative block w-2.5 h-2.5 bg-primary-600 rounded-full"
-							aria-hidden="true"
-						></span>
-						<span class="sr-only">Step 2</span>
-					</a>
-				</li>
-
-				<li>
-					<!-- Upcoming Step -->
-					<a
-						href="#"
-						class="block w-2.5 h-2.5 bg-gray-200 rounded-full hover:bg-gray-400"
-					>
-						<span class="sr-only">Step 3</span>
-					</a>
-				</li>
-
-				<li>
-					<!-- Upcoming Step -->
-					<a
-						href="#"
-						class="block w-2.5 h-2.5 bg-gray-200 rounded-full hover:bg-gray-400"
-					>
-						<span class="sr-only">Step 4</span>
-					</a>
-				</li>
-			</ol>
-
-			<!-- <p class="text-sm text-gray-500 mt-4">Step 2 of 4</p> -->
-		</nav>
+			</div>
+		</template>
+	</Editor>
+	<nav
+		ref="el"
+		class="flex items-center justify-center mt-2 flex flex-col"
+		aria-label="Progress"
+	>
+		<ol role="list" class="flex istepperStep-center mt-6 space-x-5">
+			<Step :step="1"  :state="stepperStep < 1 ? 1 : (stepperStep < 4 ? 0 : -1)"/>
+			<Step :step="2"  :state="stepperStep < 4 ? 1 : (stepperStep === 4 ? 0 : -1)"/>
+			<Step :step="3"  :state="stepperStep < 5 ? 1 : (stepperStep === 5 ? 0 : -1)"/>
+			<Step :step="4"  :state="stepperStep < 6 ? 1 : (done ? -1 : 0)"/>
+		</ol>
+		<!-- <p class="text-sm text-gray-500 mt-4">Step 2 of 4</p> -->
+	</nav>
 </template>
 
-
-
 <script lang="ts" setup>
-	import { ref } from 'vue';
-	let background = ref(false);
-	let padding = ref(false);
-	let rounded = ref(false);
-	let marker = ref(false);
+	import { ref, watch, reactive } from "vue";
+	import Typed from 'typed.js';
+	import { useIntersectionObserver } from '@vueuse/core';
 
-	const setBox = () => {
+	const options = {};
+	const step = ref(0);
+	const stepperStep = ref(0);
+	const lines = ref(5);
+    const isVisible = ref(false);
+    const done = ref(true);
+	const el = ref(undefined);
+
+    useIntersectionObserver(el, ([{ isIntersecting }]) => {
+      isVisible.value = isIntersecting;
+    });
+
+	const type = (speed: number, delay: boolean, string: string) => {
 		setTimeout(function () {
-			background.value = true;
-		}, 500);
-		setTimeout(function () {
-			padding.value = true;
-		}, 1200);
-		setTimeout(function () {
-			rounded.value = true;
-		}, 1900);
-		setTimeout(function () {
-			marker.value = true;
-		}, 2600);
+			stepperStep.value = step.value;
+			step.value == 1 && lines.value++;
+			step.value == 2 && lines.value++;
+			step.value > 1 && document.getElementsByClassName('typed-cursor')[0]?.remove();
+			const typed = new Typed('#step' + step.value, {
+				strings: [ string ],
+				typeSpeed: speed,
+				onComplete: (self) => {
+					nextStep();
+					if(step.value === 6){
+						done.value = true;
+					}
+		 		},
+				fadeOutDelay: 3000,
+			});
+		}, delay ? 1400 : 0);
 	}
 
+	const init = () => {
+		if(!done.value){
+			return;
+		}
+		done.value = false;
+		step.value = 0;
+		stepperStep.value = 0;
+		lines.value = 5;
+		nextStep();
+	}
+
+	watch(isVisible, () => {
+      if (isVisible.value) {
+        init();
+      }
+    });
+
+	const nextStep = () => {
+		setTimeout(function () {
+			step.value++;
+			switch (step.value) {
+			case 1:
+				type(20, false, '</br><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span id="step3"/></span></span><span class="token punctuation">&gt;</span></span></code>')
+				break;
+			case 2:
+				type(20, false, '</br><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code>')
+				break;
+			case 3:
+				type(70, false, '<span class="token attr-name"> class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-grey<span id="step4"></span><span class="token punctuation">"</span>')
+				break;
+			case 4:
+				type(50, true, '<span> p-2</span><span id="step5"></span>')
+				break;
+			case 5:
+				type(60, true, '<span> rounded-xl</span><span id="step6"></span>')
+				break;
+			case 6:
+				type(60, true, '<span> marker:text-orange</span>')
+				break;
+			}
+		}, 200);
+	};
 </script>
