@@ -3,7 +3,7 @@
 		<template #subtitle>Accessibile · hybrid</template>
 		<template #header>Publish for people – not paper.</template>
 		<template #content>
-			Write once and publish everywhere. No hassle with cross-compilation,
+			Write in one file and publish for everyone and everywhere. No hassle with cross-compilation,
 			formats for different media and versions for various output formats.
 		</template>
 	</ChapterHeader>
@@ -17,10 +17,10 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>newtons-cradle.jpg<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Print</span><span class="token punctuation">&gt;</span></span></span>
 <span :class="current === 2 ? shown : hidden" class="transition-opacity">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Screenreader</span><span class="token punctuation">&gt;</span></span>
-		Labore sunt officia ipsum sint ea labore enim occaecat. Incididunt id sunt excepteur in tempor velit ut.
+		In the figure you can see a simplified and reduced version of Newton's cradle. At the top, 5 balls are suspended from a rectangle. Two of the balls are pulled and released. The two balls on the opposite side swing out by the same amount. The video is played in a loop.
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Screenreader</span><span class="token punctuation">&gt;</span></span></span>
 	<span :class="hidden"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Label</span><span class="token punctuation">&gt;</span></span></span>
-		<span :class="hidden">Newtons cradle</span> <span :class="current === 1 ? shown : hidden" class="transition-opacity token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Print</span><span class="token punctuation">&gt;</span></span><span :class="current === 1 ? shown : hidden" class="transition-opacity">vor dem Stoß vs. nach dem Stoß</span><span :class="current === 1 ? shown : hidden" class="transition-opacity token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Print</span><span class="token punctuation">&gt;</span></span>
+		<span :class="hidden">Newton's cradle</span> <span :class="current === 1 ? shown : hidden" class="transition-opacity token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Print</span><span class="token punctuation">&gt;</span></span><span :class="current === 1 ? shown : hidden" class="transition-opacity">(before the impact vs. after the impact)</span><span :class="current === 1 ? shown : hidden" class="transition-opacity token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Print</span><span class="token punctuation">&gt;</span></span>
 	<span :class="hidden"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Label</span><span class="token punctuation">&gt;</span></span></span>
 <span :class="hidden"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Figure</span><span class="token punctuation">&gt;</span></span></span></code></pre><pre></pre
 				>
@@ -35,8 +35,9 @@
 								loop
 								autoplay
 								muted
+								type='video/mp4'
 							/>
-							<p><b>Fig 1</b>: Newton's cradle (idealized).</p>
+							<p><b>Fig 1</b>: Newton's cradle.</p>
 						</div>
 					</TabPanel>
 					<TabPanel>
@@ -45,9 +46,10 @@
 								src="@/assets/newtons-cradle.jpeg"
 								class="w-full"
 							/>
-							<p><b>Fig 1</b>: Newton's cradle (idealized).</p>
+							<p><b>Fig 1</b>: Newton's cradle (before the impact vs. after the impact).</p>
 						</div></TabPanel>
-					<TabPanel>Content 3</TabPanel>
+					<TabPanel><p tabindex="0">In the figure you can see a simplified and reduced version of Newton's cradle. At the top, 5 balls are suspended from a rectangle. Two of the balls are pulled and released. The two balls on the opposite side swing out by the same amount. The video is played in a loop.</p>
+							<p class="text-center"><b>Fig 1</b>: Newton's cradle.</p></TabPanel>
 				</TabPanels>
 
 			</template>
