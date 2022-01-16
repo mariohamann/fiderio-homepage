@@ -4,26 +4,14 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppHeader: typeof import('./src/components/AppHeader.vue')['default']
-    AutoSuggestion: typeof import('./src/components/code/auto-suggestion.md')['default']
     Button: typeof import('./src/components/common/Button.vue')['default']
     Card: typeof import('./src/components/common/Card.vue')['default']
-    ChapterFlexibility: typeof import('./src/components/sections/ChapterFlexibility.vue')['default']
     ChapterHeader: typeof import('./src/components/common/ChapterHeader.vue')['default']
-    ChapterHybridity: typeof import('./src/components/sections/ChapterHybridity.vue')['default']
-    ChapterScripting: typeof import('./src/components/sections/ChapterScripting.vue')['default']
-    Code: typeof import('./src/components/common/Code.vue')['default']
-    DynamicData: typeof import('./src/components/DynamicData.vue')['default']
     Editor: typeof import('./src/components/common/Editor.vue')['default']
-    ExampleDynamicData: typeof import('./src/components/examples/ExampleDynamicData.vue')['default']
     ExampleScripting: typeof import('./src/components/examples/ExampleScripting.vue')['default']
     Fiderio: typeof import('./src/components/common/Fiderio.vue')['default']
-    Footer: typeof import('./src/components/sections/Footer.vue')['default']
     Hero: typeof import('./src/components/sections/Hero.vue')['default']
     HeroTabs: typeof import('./src/components/common/HeroTabs.vue')['default']
-    'Icon:bx:bxMoon': typeof import('~icons/bx/bx-moon')['default']
-    'Icon:bx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
-    'IconAkarIcons:githubFill': typeof import('~icons/akar-icons/github-fill')['default']
     IconEquitations: typeof import('./src/components/icons/IconEquitations.vue')['default']
     IconExport: typeof import('./src/components/icons/IconExport.vue')['default']
     IconFamiliar: typeof import('./src/components/icons/IconFamiliar.vue')['default']
@@ -37,13 +25,13 @@ declare module 'vue' {
     InlineCode: typeof import('./src/components/common/InlineCode.vue')['default']
     Link: typeof import('./src/components/common/Link.vue')['default']
     Marked: typeof import('./src/components/common/Marked.vue')['default']
+    PartFooter: typeof import('./src/components/sections/PartFooter.vue')['default']
     SectionFlexibility: typeof import('./src/components/sections/SectionFlexibility.vue')['default']
     SectionHybridity: typeof import('./src/components/sections/SectionHybridity.vue')['default']
     SectionScripting: typeof import('./src/components/sections/SectionScripting.vue')['default']
     SectionShorts: typeof import('./src/components/sections/SectionShorts.vue')['default']
     SectionTemplates: typeof import('./src/components/sections/SectionTemplates.vue')['default']
     Step: typeof import('./src/components/common/Step.vue')['default']
-    Stepper: typeof import('./src/components/common/Stepper.vue')['default']
   }
 }
 

@@ -1,13 +1,15 @@
-import App from '@/App.vue';
-import { ViteSSG } from 'vite-ssg';
-import { setupLayouts } from 'virtual:generated-layouts';
-import generatedRoutes from 'virtual:generated-pages';
-import '@/styles/index.css';
+// register vue composition api globally
+import { createApp } from 'vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from 'virtual:generated-pages'
+import App from './App.vue'
 
-const routes = setupLayouts(generatedRoutes);
+import './styles/index.css'
 
-export const createApp = ViteSSG(App, { routes }, async ctx => {
-	Object.values(import.meta.globEager('./modules/*.ts')).map(i =>
-		i.install?.(ctx)
-	);
-});
+const app = createApp(App)
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+app.use(router)
+app.mount('#app')

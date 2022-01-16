@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Vitailse | Opinionated vite starter template with TailwindCSS
-		</title>
-
-		<meta
-			name="description"
-			content="Opinionated vite starter template with TailwindCSS"
-		/>
-		<link rel="icon" href="/favicon.ico" />
-		<link rel="icon" href="/favicon.png" type="image/png" />
-		<link
-			rel="alternate icon"
-			href="/favicon.ico"
-			type="image/png"
-			sizes="16x16"
-		/>
-		<link
-			rel="apple-touch-icon"
-			href="/apple-touch-icon.png"
-			sizes="180x180"
-		/>
-		<link rel="mask-icon" href="/favicon.png" color="rgb(243,244,246)" />
-		<meta name="theme-color" content="rgb(243,244,246)" />
-	</head>
-	<body class="bg-gray-400">
-		<div id="app"></div>
-		<script type="module" src="/src/main.ts"></script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>Fiderio | In the spirit of TeX. With the future in mind. </title>
+  <meta name="description" content="Fiderio is your next-gen framework for creating well-structured, print- and web-ready documents using Markdown-based syntax.">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
