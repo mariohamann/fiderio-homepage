@@ -40,6 +40,12 @@ export default defineConfig({
     }),
   ],
 
+  // https://github.com/antfu/vite-ssg
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+  },
+
   // https://github.com/vitest-dev/vitest
   test: {
     environment: 'jsdom',
