@@ -1,8 +1,3 @@
-<script setup lang="ts">
-defineEmits(['toggleSidebar'])
-const body = ref<HTMLBodyElement | null>(null)
-</script>
-
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="relative bg-white overflow-hidden">
@@ -21,16 +16,40 @@ const body = ref<HTMLBodyElement | null>(null)
               <Fiderio /> is your next-gen framework for creating well-structured, print- and web-ready documents using Markdown-based syntax.
             </p>
             <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-              <form action="#" method="POST" class="mt-3 flex">
-                <label for="email" class="sr-only">Email</label>
-                <input id="email" type="email" name="email" class="block w-full py-3 text-base rounded-md placeholder-gray-400 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="Enter your email">
-                <button type="submit" class="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-0 ml-3 flex-shrink-0 inline-flex items-center w-auto">
-                  Notify me
-                </button>
-              </form>
-              <p class="mt-3 text-sm text-gray-400 italic">
-                We will ping you once, when <Fiderio /> is available.<br>No spam, no newsletter.
-              </p>
+              <div v-if="!submit">
+                <form class="mt-3 flex" @submit.prevent="submitForm">
+                  <label class="hidden" for="name">Name</label>
+                  <input id="name" v-model="honeypot" class="hidden" tabindex="-1" type="text" name="name" placeholder="Name">
+                  <label for="email" class="sr-only">Email</label>
+                  <input id="email" v-model="email" type="email" name="email" required class="block w-full py-3 text-base rounded-md placeholder-gray-400 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="Enter your email">
+                  <button type="submit" class="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-0 ml-3 flex-shrink-0 inline-flex items-center w-auto">
+                    Notify me
+                  </button>
+                </form>
+                <p class="mt-3 text-sm text-gray-400 italic">
+                  We will ping you once, when <Fiderio /> is available.<br>No spam, no newsletter.
+                </p>
+              </div>
+              <div v-else class="text-left rounded-md bg-green-50 p-4">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <!-- Heroicon name: solid/exclamation -->
+                    <svg class="h-5 w-5 text-green-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-base font-bold text-green-700">
+                      Registration successful!
+                    </h3>
+                    <div class="mt-2 text-base text-green-700">
+                      <p>
+                        Thank you for your interest in Fiderio. We will ping you once, as soon as the beta is available!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>
@@ -45,3 +64,25 @@ const body = ref<HTMLBodyElement | null>(null)
     </div>
   </div>
 </template>
+<script lang="ts" setup>
+const FORMSPARK_ACTION_URL = 'https://submit-form.com/J5hFCcyH'
+
+const honeypot = ref('')
+const email = ref('')
+const submit = ref(false)
+
+async function submitForm() {
+  await fetch(FORMSPARK_ACTION_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({
+      message: email.value,
+      name: honeypot.value,
+    }),
+  })
+  submit.value = true
+}
+</script>
