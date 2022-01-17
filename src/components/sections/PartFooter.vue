@@ -12,21 +12,19 @@
             </p>
             <div class="mt-8 sm:flex">
               <div class="mt-3 sm:mt-0">
-                <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200">
-                  Contact Us
-                </a>
+                <a href="mail&#116;o&#58;mail%40&#102;i%6&#52;&#101;&#114;io%2E&#111;%72g" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200">Contact us</a>
               </div>
             </div>
           </div>
-          <div class="mt-8 grid grayscale grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+          <div class="mt-8 grid grayscale grid-cols-2 gap-0.5 lg:mt-0 lg:grid-cols-2">
             <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img class="max-h-12" src="@/assets/logo-vue.svg" alt="Vue">
+              <img class="max-h-12 opacity-80" src="@/assets/logo-vue.svg" alt="Vue">
             </div>
             <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img class="max-h-12 " src="@/assets/logo-vite.svg" alt="vite">
             </div>
             <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img class="max-h-12 " src="@/assets/logo-tailwind.svg" alt="Tailwind">
+              <img class="max-h-14 " src="@/assets/logo-tailwind.svg" alt="Tailwind">
             </div>
             <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img class="max-h-12 w-20 opacity-50" src="@/assets/logo-katex.svg" alt="Katex">

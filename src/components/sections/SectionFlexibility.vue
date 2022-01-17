@@ -65,7 +65,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import Typed from 'typed.js'
 import { useIntersectionObserver } from '@vueuse/core'
 
@@ -83,8 +83,8 @@ useIntersectionObserver(el, ([{ isIntersecting }]) => {
 const type = (speed: number, delay: boolean, string: string) => {
   setTimeout(() => {
     stepperStep.value = step.value
-    step.value == 1 && lines.value++
-    step.value == 2 && lines.value++
+    step.value === 1 && lines.value++
+    step.value === 2 && lines.value++
     step.value > 1 && document.getElementsByClassName('typed-cursor')[0]?.remove()
     const typed = new Typed(`#step${step.value}`, {
       strings: [string],
@@ -98,22 +98,6 @@ const type = (speed: number, delay: boolean, string: string) => {
     })
   }, delay ? 1400 : 0)
 }
-
-const init = () => {
-  if (!done.value)
-    return
-
-  done.value = false
-  step.value = 0
-  stepperStep.value = 0
-  lines.value = 5
-  nextStep()
-}
-
-watch(isVisible, () => {
-  if (isVisible.value)
-    init()
-})
 
 const nextStep = () => {
   setTimeout(() => {
@@ -139,5 +123,21 @@ const nextStep = () => {
         break
     }
   }, 200)
+
+  const init = () => {
+    if (!done.value)
+      return
+
+    done.value = false
+    step.value = 0
+    stepperStep.value = 0
+    lines.value = 5
+    nextStep()
+  }
+
+  watch(isVisible, () => {
+    if (isVisible.value)
+      init()
+  })
 }
 </script>
