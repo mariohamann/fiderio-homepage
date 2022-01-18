@@ -6,7 +6,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "vite/preload-helper": [
     "/assets/logo-vue.4e49e330.svg",
@@ -15,7 +15,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "plugin-vue:export-helper": [
     "/assets/logo-vue.4e49e330.svg",
@@ -24,7 +24,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Fiderio.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -33,7 +33,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/logo-vue.svg": [
     "/assets/logo-vue.4e49e330.svg",
@@ -42,7 +42,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/logo-vite.svg": [
     "/assets/logo-vue.4e49e330.svg",
@@ -51,7 +51,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/logo-tailwind.svg": [
     "/assets/logo-vue.4e49e330.svg",
@@ -60,7 +60,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/logo-katex.svg": [
     "/assets/logo-vue.4e49e330.svg",
@@ -69,7 +69,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/PartFooter.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -78,7 +78,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Button.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -87,7 +87,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/icons/IconPlus.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -96,7 +96,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Editor.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -105,7 +105,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/examples/ExampleScripting.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -114,7 +114,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/ChapterHeader.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -123,7 +123,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Link.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -132,7 +132,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/SectionScripting.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -141,7 +141,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Marked.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -150,7 +150,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/SectionTemplates.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -159,43 +159,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
-  ],
-  "src/components/icons/IconGit.vue": [
-    "/assets/logo-vue.4e49e330.svg",
-    "/assets/logo-vite.49e388b6.svg",
-    "/assets/logo-tailwind.821f6ae0.svg",
-    "/assets/logo-katex.29a9ba5d.svg",
-    "/assets/newtons-cradle.1d18b6f8.mp4",
-    "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
-  ],
-  "src/components/icons/IconLocal.vue": [
-    "/assets/logo-vue.4e49e330.svg",
-    "/assets/logo-vite.49e388b6.svg",
-    "/assets/logo-tailwind.821f6ae0.svg",
-    "/assets/logo-katex.29a9ba5d.svg",
-    "/assets/newtons-cradle.1d18b6f8.mp4",
-    "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
-  ],
-  "src/components/icons/IconTheme.vue": [
-    "/assets/logo-vue.4e49e330.svg",
-    "/assets/logo-vite.49e388b6.svg",
-    "/assets/logo-tailwind.821f6ae0.svg",
-    "/assets/logo-katex.29a9ba5d.svg",
-    "/assets/newtons-cradle.1d18b6f8.mp4",
-    "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
-  ],
-  "src/components/icons/IconPlugins.vue": [
-    "/assets/logo-vue.4e49e330.svg",
-    "/assets/logo-vite.49e388b6.svg",
-    "/assets/logo-tailwind.821f6ae0.svg",
-    "/assets/logo-katex.29a9ba5d.svg",
-    "/assets/newtons-cradle.1d18b6f8.mp4",
-    "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/icons/IconExport.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -204,7 +168,52 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
+  ],
+  "src/components/icons/IconGit.vue": [
+    "/assets/logo-vue.4e49e330.svg",
+    "/assets/logo-vite.49e388b6.svg",
+    "/assets/logo-tailwind.821f6ae0.svg",
+    "/assets/logo-katex.29a9ba5d.svg",
+    "/assets/newtons-cradle.1d18b6f8.mp4",
+    "/assets/newtons-cradle.93db9c09.jpeg",
+    "/assets/hero-image.e8226151.jpg"
+  ],
+  "src/components/icons/IconLocal.vue": [
+    "/assets/logo-vue.4e49e330.svg",
+    "/assets/logo-vite.49e388b6.svg",
+    "/assets/logo-tailwind.821f6ae0.svg",
+    "/assets/logo-katex.29a9ba5d.svg",
+    "/assets/newtons-cradle.1d18b6f8.mp4",
+    "/assets/newtons-cradle.93db9c09.jpeg",
+    "/assets/hero-image.e8226151.jpg"
+  ],
+  "src/components/icons/IconTheme.vue": [
+    "/assets/logo-vue.4e49e330.svg",
+    "/assets/logo-vite.49e388b6.svg",
+    "/assets/logo-tailwind.821f6ae0.svg",
+    "/assets/logo-katex.29a9ba5d.svg",
+    "/assets/newtons-cradle.1d18b6f8.mp4",
+    "/assets/newtons-cradle.93db9c09.jpeg",
+    "/assets/hero-image.e8226151.jpg"
+  ],
+  "src/components/icons/IconPlugins.vue": [
+    "/assets/logo-vue.4e49e330.svg",
+    "/assets/logo-vite.49e388b6.svg",
+    "/assets/logo-tailwind.821f6ae0.svg",
+    "/assets/logo-katex.29a9ba5d.svg",
+    "/assets/newtons-cradle.1d18b6f8.mp4",
+    "/assets/newtons-cradle.93db9c09.jpeg",
+    "/assets/hero-image.e8226151.jpg"
+  ],
+  "src/components/icons/IconEquitations.vue": [
+    "/assets/logo-vue.4e49e330.svg",
+    "/assets/logo-vite.49e388b6.svg",
+    "/assets/logo-tailwind.821f6ae0.svg",
+    "/assets/logo-katex.29a9ba5d.svg",
+    "/assets/newtons-cradle.1d18b6f8.mp4",
+    "/assets/newtons-cradle.93db9c09.jpeg",
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/icons/IconPreview.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -213,7 +222,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/icons/IconFileSplitting.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -222,7 +231,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Card.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -231,7 +240,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/InlineCode.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -240,7 +249,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/icons/IconFamiliar.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -249,7 +258,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/SectionShorts.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -258,7 +267,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/common/Step.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -267,7 +276,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/SectionFlexibility.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -276,7 +285,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/newtons-cradle.mp4": [
     "/assets/logo-vue.4e49e330.svg",
@@ -285,7 +294,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/newtons-cradle.jpeg": [
     "/assets/logo-vue.4e49e330.svg",
@@ -294,7 +303,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/SectionHybridity.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -303,7 +312,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/assets/hero-image.jpg": [
     "/assets/logo-vue.4e49e330.svg",
@@ -312,7 +321,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/components/sections/Hero.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -321,7 +330,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "node_modules/.pnpm/prism-theme-vars@0.2.2/node_modules/prism-theme-vars/base.css": [
     "/assets/logo-vue.4e49e330.svg",
@@ -330,7 +339,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/pages/index.vue?vue&type=route&index=0&lang.yaml": [
     "/assets/logo-vue.4e49e330.svg",
@@ -339,7 +348,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/pages/index.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -348,7 +357,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "../../../../@vite-plugin-pages/generated-pages": [
     "/assets/logo-vue.4e49e330.svg",
@@ -357,7 +366,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/layouts/default.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -366,7 +375,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "../../../../@vite-plugin-vue-layouts/generated-layouts": [
     "/assets/logo-vue.4e49e330.svg",
@@ -375,7 +384,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/App.vue": [
     "/assets/logo-vue.4e49e330.svg",
@@ -384,7 +393,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/styles/index.css": [
     "/assets/logo-vue.4e49e330.svg",
@@ -393,7 +402,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "src/main.ts": [
     "/assets/logo-vue.4e49e330.svg",
@@ -402,7 +411,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "index.html": [
     "/assets/logo-vue.4e49e330.svg",
@@ -411,7 +420,7 @@
     "/assets/logo-katex.29a9ba5d.svg",
     "/assets/newtons-cradle.1d18b6f8.mp4",
     "/assets/newtons-cradle.93db9c09.jpeg",
-    "/assets/hero-image.b3f7f652.jpg"
+    "/assets/hero-image.e8226151.jpg"
   ],
   "node_modules/.pnpm/@vue+shared@3.2.26/node_modules/@vue/shared/dist/shared.esm-bundler.js": [
     "/assets/vendor.e928eba2.js"
@@ -606,6 +615,6 @@
     "/assets/_...all_.46fd963c.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.84282f01.js"
+    "/assets/404.c1d60704.js"
   ]
 }
