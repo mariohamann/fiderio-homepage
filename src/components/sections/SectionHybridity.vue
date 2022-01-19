@@ -39,7 +39,7 @@
                 loop
                 autoplay
                 muted
-                playinline
+                playsinline
                 type="video/mp4"
               />
               <p><b>Fig 1</b>: Newton's cradle.</p>
