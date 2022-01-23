@@ -1,9 +1,9 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="relative bg-white overflow-hidden">
+  <div class="relative bg-gray-50 overflow-hidden">
     <div class="max-w-7xl mx-auto">
-      <div class="relative z-10 pb-12 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <div class="relative z-10 pb-12 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-50 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
         <main class="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
@@ -57,10 +57,43 @@
     </div>
 
     <div class="relative lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <svg class="block lg:hidden top-0 absolute right-0 inset-y-0 h-10 md:h-12 w-screen text-white" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <svg class="z-10 block lg:hidden top-0 absolute right-0 inset-y-0 h-10 md:h-12 w-screen text-gray-50" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <polygon points="0,0 100,0 0,100 0,100" />
       </svg>
-      <img class="h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero-image.jpg" alt="">
+      <div id="hero-image-fader" class="z-0 relative h-96 object-cover lg:w-full lg:h-full">
+        <img class="absolute h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero/hero-1.jpg" alt="">
+        <img class="absolute h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero/hero-2.jpg" alt="">
+        <img class="absolute h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero/hero-3.jpg" alt="">
+      </div>
+      <!-- <styles>
+        @keyframes cf4FadeInOut {
+        0% {
+        opacity:1;
+        }
+        17% {
+        opacity:1;
+        }
+        25% {
+        opacity:0;
+        }
+        92% {
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+        }
+
+        #hero-image-fader img:nth-of-type(2) {
+        animation-delay: 4s;
+        }
+        #hero-image-fader img:nth-of-type(3) {
+        animation-delay: 2s;
+        }
+        #hero-image-fader img:nth-of-type(4) {
+        animation-delay: 0;
+        }
+      </styles> -->
     </div>
   </div>
 </template>
