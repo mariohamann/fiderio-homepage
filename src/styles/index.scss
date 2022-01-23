@@ -67,25 +67,4 @@ code *[class*='language-']{
 	@apply bg-primary-200;
 }
 
-/* .prose pre, pre {
-	@apply leading-loose p-4;
-	.code-highlight {
-		@apply rounded;
-		padding: 0.125rem 0.1875rem;
-		margin: 0 -0.1875rem;
-	}
-	.bg-code-highlight {
-		background-color: rgb(125 211 252/0.1);
-	}
-} */
-/* pre {
-	@apply leading-loose text-sm;
-	.code-highlight {
-		@apply rounded;
-		padding: 0.125rem 0.1875rem;
-		margin: 0 -0.1875rem;
-	}
-	.bg-code-highlight {
-		background-color: rgb(125 211 252/0.1);
-	}
-} */
+@import "hero-image.scss"

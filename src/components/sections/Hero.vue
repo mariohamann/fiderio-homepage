@@ -60,40 +60,11 @@
       <svg class="z-10 block lg:hidden top-0 absolute right-0 inset-y-0 h-10 md:h-12 w-screen text-gray-50" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <polygon points="0,0 100,0 0,100 0,100" />
       </svg>
-      <div id="hero-image-fader" class="z-0 relative h-96 object-cover lg:w-full lg:h-full">
+      <div id="hero-image-fader" class="z-0 bg-gray-700 relative h-96 object-cover lg:w-full lg:h-full">
         <img class="absolute h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero/hero-1.jpg" alt="">
         <img class="absolute h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero/hero-2.jpg" alt="">
         <img class="absolute h-96 w-full object-cover lg:w-full lg:h-full" src="@/assets/hero/hero-3.jpg" alt="">
       </div>
-      <!-- <styles>
-        @keyframes cf4FadeInOut {
-        0% {
-        opacity:1;
-        }
-        17% {
-        opacity:1;
-        }
-        25% {
-        opacity:0;
-        }
-        92% {
-        opacity:0;
-        }
-        100% {
-        opacity:1;
-        }
-        }
-
-        #hero-image-fader img:nth-of-type(2) {
-        animation-delay: 4s;
-        }
-        #hero-image-fader img:nth-of-type(3) {
-        animation-delay: 2s;
-        }
-        #hero-image-fader img:nth-of-type(4) {
-        animation-delay: 0;
-        }
-      </styles> -->
     </div>
   </div>
 </template>

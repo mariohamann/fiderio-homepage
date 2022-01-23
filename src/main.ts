@@ -5,7 +5,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
 
 // windicss layers
-import '@/styles/index.css'
+import '@/styles/index.scss'
 
 const routes = setupLayouts(generatedRoutes)
 
