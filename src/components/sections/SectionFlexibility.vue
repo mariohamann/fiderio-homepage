@@ -34,7 +34,7 @@
               ? 'border-l-primary-500'
               : 'border-l-white',
           ]"
-          class="duration-1000 marker:text-gray-600"
+          class="marker:text-gray-600 duration-1000"
         >
           <ul class="">
             <li class="mt-1">
@@ -51,10 +51,10 @@
   </Editor>
   <nav
     ref="el"
-    class="flex items-center justify-center mt-2 flex flex-col"
+    class="flex flex-col justify-center items-center mt-2"
     aria-label="Progress"
   >
-    <ol role="list" class="flex istepperStep-center mt-6 space-x-5">
+    <ol role="list" class="flex mt-6 space-x-5 istepperStep-center">
       <Step :step="1" :state="stepperStep < 1 ? 1 : (stepperStep < 4 ? 0 : -1)" />
       <Step :step="2" :state="stepperStep < 4 ? 1 : (stepperStep === 4 ? 0 : -1)" />
       <Step :step="3" :state="stepperStep < 5 ? 1 : (stepperStep === 5 ? 0 : -1)" />
@@ -83,17 +83,18 @@ useIntersectionObserver(el, ([{ isIntersecting }]) => {
 const type = (speed: number, delay: boolean, string: string) => {
   setTimeout(() => {
     stepperStep.value = step.value
-    step.value == 1 && lines.value++
-    step.value == 2 && lines.value++
+    step.value === 1 && lines.value++
+    step.value === 2 && lines.value++
     step.value > 1 && document.getElementsByClassName('typed-cursor')[0]?.remove()
     const typed = new Typed(`#step${step.value}`, {
       strings: [string],
       typeSpeed: speed,
       onComplete: (self) => {
+        // eslint-disable-next-line @typescript-eslint/no-use-before-define
         nextStep()
         if (step.value === 6)
           done.value = true
-		 		},
+      },
       fadeOutDelay: 3000,
     })
   }, delay ? 1400 : 0)
@@ -107,6 +108,7 @@ const init = () => {
   step.value = 0
   stepperStep.value = 0
   lines.value = 5
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   nextStep()
 }
 

@@ -1,13 +1,13 @@
 
 <template>
-  <div class="text-center pb-6 mb-2  px-4 xl:px-0">
-    <p class="uppercase text-primary-600 font-serif mb-1 text-base">
+  <div class="px-4 pb-6 mb-2 text-center xl:px-0">
+    <p class="mb-1 font-serif text-base text-primary-600 uppercase">
       <slot name="subtitle" />
     </p>
     <h2 class="pb-3 font-serif text-3xl">
       <slot name="header" />
     </h2>
-    <p class="text-lg max-w-xl mx-auto pb-2 mt-2">
+    <p class="pb-2 mx-auto mt-2 max-w-xl text-lg">
       <slot name="content" />
     </p>
   </div>

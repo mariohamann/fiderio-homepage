@@ -1,16 +1,16 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div
-    class="bg-gradient-to-tr py-16 px-10 lg:p-24 from-primary-500 to-secondary-600"
+    class="py-16 px-10 bg-gradient-to-tr from-primary-500 to-secondary-600 lg:p-24"
   >
-    <div class="max-w-screen-lg mx-auto">
-      <h3 class="text-4xl font-serif text-white mb-12 ">
-        There's no reason to miss LaTeX – promised.
+    <div class="mx-auto max-w-screen-lg">
+      <h3 class="mb-12 font-serif text-4xl text-white">
+        There's no reason to miss LaTeX – promised.
       </h3>
       <h3 class="mt-10 mb-4 text-2xl text-white">
         1. Edit
       </h3>
-      <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <dl class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-3">
         <Card>
           <template #icon>
             <IconFamiliar />
@@ -19,7 +19,7 @@
             Familiar code
           </template>
           <template #content>
-            From <InlineCode>\cite</InlineCode> to <InlineCode>&lt;Cite&gt;</InlineCode> – your switch will be smooth!
+            From <InlineCode>\cite</InlineCode> to <InlineCode>&lt;Cite&gt;</InlineCode> – your switch will be smooth!
           </template>
         </Card>
         <Card>
@@ -50,7 +50,7 @@
       <h3 class="mt-10 mb-4 text-2xl text-white">
         2. Extend
       </h3>
-      <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <dl class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-3">
         <Card>
           <template #icon>
             <IconEquitations />
@@ -88,7 +88,7 @@
       <h3 class="mt-10 mb-4 text-2xl text-white">
         3. Save and export
       </h3>
-      <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <dl class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-3">
         <Card>
           <template #icon>
             <IconLocal />

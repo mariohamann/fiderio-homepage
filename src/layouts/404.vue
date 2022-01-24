@@ -1,5 +1,5 @@
 <template>
-	<main class="w-full min-h-screen bg-blue-100 grid place-items-center">
-		<router-view />
-	</main>
+  <main class="grid place-items-center w-full min-h-screen bg-blue-100">
+    <router-view />
+  </main>
 </template>

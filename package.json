@@ -4,7 +4,7 @@
     "dev": "vite --port 3333 --open",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "lint": "eslint . --ext=.ts,.vue",
+    "lint": "eslint . --ext=.ts,.vue --fix",
     "test": "vitest"
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "@vue/test-utils": "^2.0.0-rc.18",
     "critters": "^0.0.16",
     "eslint": "^8.6.0",
+    "eslint-plugin-tailwindcss": "^3.3.2",
     "jsdom": "^19.0.0",
     "pnpm": "^6.26.1",
     "sass": "^1.49.0",

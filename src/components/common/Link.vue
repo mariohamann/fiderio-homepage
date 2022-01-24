@@ -1,9 +1,9 @@
 <template>
-	<a class="transition-all underline decoration-primary-500 decoration-2 underline-offset-2 hover:decoration-primary-700" v-bind:href=href><slot></slot></a>
+  <a class="underline decoration-primary-500 hover:decoration-primary-700 decoration-2 underline-offset-2 transition-all" :href="href"><slot /></a>
 </template>
 
 <script lang="ts" setup>
-	const props = defineProps({
-		href: String,
-	});
+const props = defineProps({
+  href: String,
+})
 </script>

@@ -2,22 +2,22 @@
 
 @import 'prism-theme-vars/base.css';
 :root {
-	--prism-foreground: #d4d4d4;
-	--prism-background: transparent;
+  --prism-foreground: #d4d4d4;
+  --prism-background: transparent;
 
-	--prism-namespace: #aaaaaa;
-	--prism-comment: #758575;
-	--prism-namespace: #444444;
-	--prism-string: #ce9178;
-	--prism-punctuation: rgb(100 116 139);
-	--prism-literal: #36acaa;
-	--prism-keyword: rgb(125 211 252);
-	--prism-function: #dcdcaa;
-	--prism-deleted: #9a050f;
-	--prism-class: #4ec9b0;
-	--prism-builtin: rgb(244 114 182);
-	--prism-property: rgb(203 213 225);
-	--prism-regex: #ad502b;
+  --prism-namespace: #aaaaaa;
+  --prism-comment: #758575;
+  --prism-namespace: #444444;
+  --prism-string: #ce9178;
+  --prism-punctuation: rgb(100 116 139);
+  --prism-literal: #36acaa;
+  --prism-keyword: rgb(125 211 252);
+  --prism-function: #dcdcaa;
+  --prism-deleted: #9a050f;
+  --prism-class: #4ec9b0;
+  --prism-builtin: rgb(244 114 182);
+  --prism-property: rgb(203 213 225);
+  --prism-regex: #ad502b;
 }
 
 @tailwind base;
@@ -25,46 +25,46 @@
 @tailwind utilities;
 
 pre[class*='language-'], code[class*='language-']{
-	padding: 0 !important;
-	margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 code *[class*='language-']{
-	@apply font-mono leading-7;
+  @apply font-mono leading-7;
 }
 
 .typed-cursor{
-	color: white;
-	display: inline-block;
-	width: 0px;
+  color: white;
+  display: inline-block;
+  width: 0px;
 }
 .typed-cursor::before{
-	margin-left: -4px;
-	content: '';
+  margin-left: -4px;
+  content: '';
 
 }
 .typed-cursor.typed-cursor--blink{
-	color: white !important;
-	animation: reset !important;
+  color: white !important;
+  animation: reset !important;
 }
 
 .highlight{
-	@apply px-1 py-0.5 rounded-md transition duration-700;
-	margin: 0 -.1875rem;
-	background-color: rgb(125 211 252/.1);
+  @apply px-1 py-0.5 rounded-md transition duration-700;
+  margin: 0 -.1875rem;
+  background-color: rgb(125 211 252/.1);
 }
 
 .loading .highlight{
-	background-color: rgb(125 211 252/.05);
+  background-color: rgb(125 211 252/.05);
 }
 
 
 .dynamic{
-	@apply -mx-0.5 px-0.5 rounded-md transition duration-700 bg-white;
+  @apply -mx-0.5 px-0.5 rounded-md transition duration-700 bg-white;
 }
 
 .loading .dynamic{
-	@apply bg-primary-200;
+  @apply bg-primary-200;
 }
 
 @import "hero-image.scss"

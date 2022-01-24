@@ -4,8 +4,8 @@
     <Hero />
   </header>
 
-  <main class="py-8 bg-gray-100 text-gray-900 leading-loose">
-    <div class="text-lg my-24 space-y-24">
+  <main class="py-8 leading-loose text-gray-900 bg-gray-100">
+    <div class="my-24 space-y-24 text-lg">
       <section>
         <SectionHybridity />
       </section>

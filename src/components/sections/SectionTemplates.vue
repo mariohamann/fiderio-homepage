@@ -19,9 +19,9 @@
 Adipisicing nostrud tempor amet commodo laboris adipisicing Lorem qui sint. Id amet dolore ad in.
 <span class="token tag highlight"><span class="token tag"><span class="token punctuation">&lt;</span>Marked</span><span class="token punctuation">&gt;</span></span>Aliquip<span class="token tag highlight"><span class="token tag"><span class="token punctuation">&lt;/</span>Marked</span><span class="token punctuation">&gt;</span></span> aliqua do cillum veniam non. In quis nisi laboris voluptate aliqua in commodo nostrud occaecat ipsum.
 Ipsum consectetur exercitation <span class="token tag highlight"><span class="token tag"><span class="token punctuation">&lt;</span>Marked</span><span class="token punctuation">&gt;</span></span>labore<span class="token tag highlight"><span class="token tag"><span class="token punctuation">&lt;/</span>Marked</span><span class="token punctuation">&gt;</span></span> reprehenderit sint laborum enim. Ad nisi sunt do deserunt labore ea.</code></pre>
-            <div class="border-white w-full bg-white opacity-5 h-[1px] my-[13px] block" />
-            <pre class="language-markup opacity-50" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-red-100 rounded-md ...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <div class="block my-[13px] w-full h-[1px] bg-white border-white opacity-5" />
+            <pre class="opacity-50 language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-red-100 rounded-md ...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
           </TabPanel>
@@ -42,7 +42,7 @@ Ipsum consectetur exercitation <span class="token tag highlight"><span class="to
         </p>
       </template>
     </Editor><div class=" px-4 xl:px-0">
-      <TabList class="flex p-1 max-w-md mx-auto  space-x-1 bg-primary-600 rounded-xl mt-8">
+      <TabList class="flex p-1 mx-auto mt-8 space-x-1 max-w-md bg-primary-600 rounded-xl">
         <Tab
           v-for="tab in tabs"
           :key="tab.name"
